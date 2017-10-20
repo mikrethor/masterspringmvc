@@ -32,6 +32,10 @@ dependencies {
     compile group: 'org.webjars', name: 'materializecss', version: '0.100.2'
     compile group: 'org.webjars', name: 'jquery', version: '3.2.1'
 
+	optional "org.springframework.boot:spring-boot-configuration-processor"
+
 
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
+
+compileJava.dependsOn(processResources)
