@@ -25,14 +25,18 @@ repositories {
 
 dependencies {
 
+	compile("com.fasterxml.jackson.datatype:jackson-datatype-jsr310")
 	compile("org.springframework.boot:spring-boot-starter-web")
 	compile("org.springframework.boot:spring-boot-starter-thymeleaf")
     compile("org.springframework.boot:spring-boot-starter-social-twitter")
+    compile group: 'io.springfox', name: 'springfox-swagger2', version: '2.7.0'
+    compile group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.7.0'
+
 
     compile group: 'org.webjars', name: 'materializecss', version: '0.100.2'
     compile group: 'org.webjars', name: 'jquery', version: '3.2.1'
 
-	optional "org.springframework.boot:spring-boot-configuration-processor"
+	compile "org.springframework.boot:spring-boot-configuration-processor"
 
 
     testCompile('org.springframework.boot:spring-boot-starter-test')
