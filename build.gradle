@@ -32,7 +32,7 @@ dependencies {
     compile group: 'io.springfox', name: 'springfox-swagger2', version: '2.7.0'
     compile group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.7.0'
 
-
+	compile 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml'
     compile group: 'org.webjars', name: 'materializecss', version: '0.100.2'
     compile group: 'org.webjars', name: 'jquery', version: '3.2.1'
 
